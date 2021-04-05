@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/container_bg"
+    android:layout_margin="2dp"
+    android:padding="16dp"
+    tools:ignore="RtlHardcoded">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_user_img"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="Profile Image"
+        android:src="@drawable/avatar_default"
+        app:civ_border_color="#222222"
+        app:civ_border_width="@dimen/nav_image_circular_border_width" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/item_user_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/top_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textAlignment="viewStart"
+            tools:text="ٍSandra Adams"/>
+
+        <TextView
+            android:id="@+id/bottom_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="sandra_adams@mail.com"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
